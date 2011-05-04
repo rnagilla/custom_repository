@@ -7,10 +7,15 @@ gem 'rails', '3.0.7'
 
 gem 'mysql2', '< 0.3'
 gem 'haml-rails'
-#gem 'cass'
-
-# Use unicorn as the web server
-# gem 'unicorn'
+gem 'sass'
+gem 'nokogiri'
+gem 'aasm'
+gem 'devise'
+gem 'json'
+gem 'barista'
+# Use unicorn or passenger as the web server
+#gem 'unicorn'
+#gem 'passenger'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -31,7 +36,9 @@ gem 'haml-rails'
 group :development, :test do
    gem 'webrat'
    gem 'rspec-rails'
+   gem 'rspec_spinner', :git => 'https://github.com/nofxx/rspec_spinner.git'
    gem 'cucumber-rails'
    gem 'rcov'
+   gem 'factory_girl'
    gem 'ci_reporter'
 end
